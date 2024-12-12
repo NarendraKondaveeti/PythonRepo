@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci Series Flowchart</title>
+</head>
+<body>
+  <svg width="800" height="700">
+    <!-- Start -->
+    <rect x="300" y="20" width="200" height="50" style="fill:lightblue;stroke:black;stroke-width:2;" />
+    <text x="360" y="50" font-size="15">Start</text>
+
+    <!-- Input N -->
+    <rect x="300" y="100" width="200" height="50" style="fill:lightgreen;stroke:black;stroke-width:2;" />
+    <text x="310" y="130" font-size="15">Input N</text>
+
+    <!-- Initialize A and B -->
+    <rect x="300" y="180" width="200" height="50" style="fill:lightyellow;stroke:black;stroke-width:2;" />
+    <text x="310" y="210" font-size="15">a=0, b=1</text>
+
+    <!-- Loop Condition -->
+    <rect x="300" y="260" width="200" height="50" style="fill:lightpink;stroke:black;stroke-width:2;" />
+    <text x="320" y="290" font-size="15">Loop until count<N</text>
+
+    <!-- Print Current Term -->
+    <rect x="100" y="340" width="200" height="50" style="fill:lightcoral;stroke:black;stroke-width:2;" />
+    <text x="120" y="370" font-size="15">Print a</text>
+    <line x1="400" y1="310" x2="200" y2="340" style="stroke:black;stroke-width:2;" />
+
+    <!-- Update Terms -->
+    <rect x="300" y="420" width="200" height="50" style="fill:lightgreen;stroke:black;stroke-width:2;" />
+    <text x="320" y="450" font-size="15">a=b, b=a+b</text>
+    <line x1="200" y1="390" x2="400" y2="420" style="stroke:black;stroke-width:2;" />
+
+    <!-- Loop Back -->
+    <line x1="400" y1="470" x2="400" y2="310" style="stroke:black;stroke-width:2;" />
+    <text x="420" y="390" font-size="12" transform="rotate(90 420,390)">Repeat</text>
+
+    <!-- End -->
+    <rect x="300" y="500" width="200" height="50" style="fill:lightblue;stroke:black;stroke-width:2;" />
+    <text x="370" y="530" font-size="15">End</text>
+    <line x1="400" y1="470" x2="400" y2="500" style="stroke:black;stroke-width:2;" />
+  </svg>
+</body>
+</html>

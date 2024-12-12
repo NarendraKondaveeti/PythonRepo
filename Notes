@@ -1,0 +1,30 @@
+# ====Raw method(it means no ib-built function or methonds)=====
+# ====without fuction but with in-built method =================
+# ====with function and without in-built method/functions ======
+# ====with function and in-built methond and the input value should as at runtime ====
+"""
+give me the core things for this program like below example
+for Palindrome program first manaki okka input variable kavlai input string nee store cheyataniki
+like input_string = madam 
+travata okka Empty variable kavali for final gaa voche reversed string nee
+store cheyataniki reversed_string = ""
+ippudu e input_string nee for loop tho okka value iterate chesthu 
+a value nee okka "char" ane variable loki store chesi
+ippudu a "char" ane variable lo vunna value nee empty reversed_string ki concatnate chesthu like
+"char + reversed_string" a value malli reversed_string lo store chesthu like
+"reversed_string = char + reversed_string" finaly gaa for complete ayyaka a final reversed_string nee
+if condition tho like "input_string == reversed_string" check chesin condtion true aithe 
+if block lo statement example 'print(f"'{input_string}' is a Palindrome")' ani ledaa
+else block lo staement example 'print(f"'{input_string}' is not a Palindrome")' ani print avuthundi
+
+################
+if in python in-built method like slicing, slicing anedi python okka in-built method 
+idulo start, end , and step ane three things vutai dini [start:end:step] ilaa rastharu
+strat:- idi starting index value nee represent chesthundi 
+end:- idi ending index value nee represent chesthundi
+step:- idi direction nee and iteration step nee represent chesthundi 
+ante positive 1 isthe left to right direction lo iteration chesthundi ade
+negitive -1 isthe right to left direction lo iteration chesthundi
+and step ichina value batti ani position nee skip chesthu iteration cheyali ani cheputhundi
+example step value 2 isthe start index value print chesaka, next value start index + step value 
+"""
