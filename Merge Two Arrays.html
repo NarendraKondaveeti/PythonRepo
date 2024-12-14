@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Two Arrays Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input Array 1 and Array 2]
+    B --> C[Create an empty result array]
+    C --> D[Set i equal to 0]
+    D --> E[Check if i is less than length of Array 1]
+    E -->|Yes| F[Add element at index i of Array 1 to result]
+    E -->|No| G[Move to next step]
+    F --> H[Increment i by 1]
+    H --> E
+    G --> I[Set j equal to 0]
+    I --> J[Check if j is less than length of Array 2]
+    J -->|Yes| K[Add element at index j of Array 2 to result]
+    J -->|No| L[Move to next step]
+    K --> M[Increment j by 1]
+    M --> J
+    L --> N[Output the merged result array]
+    N --> O[End]
+</div>
+</body>
+</html>

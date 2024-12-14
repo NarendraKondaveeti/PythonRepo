@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Debugging Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true });</script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input n: Upper Limit for Prime Check]
+    B --> C[Initialize num = 2]
+    C --> D[Is num <= n?]
+    D -->|Yes| E[Initialize is_prime = True]
+    D -->|No| Q[End]
+    E --> F[Initialize i = 2]
+    F --> G[Is i < num?]
+    G -->|Yes| H[Check: num % i == 0]
+    G -->|No| N[Check is_prime == True]
+    H -->|Yes| I[Set is_prime = False]
+    H -->|No| J[Increment i by 1]
+    I --> K[Break Inner Loop]
+    K --> N
+    J --> G
+    N -->|True| O[Print: num is Prime]
+    N -->|False| P[Skip Printing]
+    O --> L[Increment num by 1]
+    P --> L
+    L --> D
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check for Perfect Number</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input number n]
+    B --> C[Initialize sum = 0]
+    C --> D[Initialize i = 1]
+    D --> E[Is i < n?]
+    E -->|Yes| F[Check if n % i == 0]
+    F -->|Yes| G[Add i to sum: sum = sum + i]
+    F -->|No| H[Increment i by 1]
+    G --> H
+    H --> D
+    E -->|No| I[Check if sum == n]
+    I -->|Yes| J[Print: n is a Perfect Number]
+    I -->|No| K[Print: n is NOT a Perfect Number]
+    J --> L[End]
+    K --> L
+</div>
+</body>
+</html>

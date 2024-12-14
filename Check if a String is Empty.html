@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check if String is Empty Flowchart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input string s]
+    B --> C{Is s empty?}
+    C -->|Yes| D[Output "String is empty"]
+    C -->|No| E[Output "String is not empty"]
+    D --> F[End]
+    E --> F[End]
+</div>
+</body>
+</html>

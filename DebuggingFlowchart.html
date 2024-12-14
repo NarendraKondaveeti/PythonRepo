@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Flowchart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        svg {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.16.0/flowchart.min.js"></script>
+</head>
+<body>
+    <h2>Debugging Flowchart</h2>
+    <div class="container">
+        <div id="diagram" style="width: 100%; max-width: 800px; height: auto;"></div>
+    </div>
+    <script>
+        var diagramCode = `
+            st=>start: Start Debugging
+            review=>operation: Review the Program Logic
+            identify=>operation: Identify the Failing Code Section
+            isolate=>operation: Isolate the Error Source
+            test_case=>operation: Write Test Case for Edge Cases
+            fix=>operation: Fix the Identified Issue
+            validate=>condition: Is the Issue Fixed?
+            further_debug=>operation: Check Logs & Reproduce Issue
+            success=>end: Program Working as Expected
+
+            st->review->identify->isolate->test_case->fix->validate
+            validate(yes)->success
+            validate(no)->further_debug->identify
+        `;
+
+        var diagram = flowchart.parse(diagramCode);
+        diagram.drawSVG('diagram', {
+            'x': 0,
+            'y': 0,
+            'line-width': 2,
+            'maxWidth': 800,
+            'line-length': 40,
+            'text-margin': 10,
+            'font-size': 14,
+            'font-color': 'black',
+            'line-color': 'black',
+            'element-color': 'black',
+            'fill': 'white',
+            'yes-text': 'Yes',
+            'no-text': 'No',
+            'arrow-end': 'block',
+            'scale': 1.2,
+            'symbols': {
+                'start': {
+                    'font-color': 'white',
+                    'fill': '#2ECC71',
+                    'font-size': 14
+                },
+                'end': {
+                    'font-color': 'white',
+                    'fill': '#E74C3C',
+                    'font-size': 14
+                },
+                'condition': {
+                    'fill': '#F1C40F',
+                    'font-size': 14,
+                    'yes-text': 'Yes',
+                    'no-text': 'No'
+                },
+                'operation': {
+                    'fill': '#3498DB',
+                    'font-size': 14
+                }
+            },
+            'flowstate': {
+                'highlighted': { 'fill': '#EC7063', 'font-color': 'white', 'font-size': 14 }
+            }
+        });
+    </script>
+</body>
+</html>

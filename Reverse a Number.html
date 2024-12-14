@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse a Number Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input number]
+    B --> C[Initialize reverse_number = 0]
+    C --> D[Is number greater than 0?]
+    D -->|No| E[Output reverse_number]
+    D -->|Yes| F[Get last digit of number: last_digit = number mod 10]
+    F --> G[Update reverse_number: reverse_number = reverse_number * 10 + last_digit]
+    G --> H[Update number: number = number // 10]
+    H --> D
+    E --> I[End]
+</div>
+</body>
+</html>

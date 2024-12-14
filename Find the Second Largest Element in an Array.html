@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Second Largest Element in an Array Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input array of elements]
+    B --> C[Initialize first_largest = -infinity, second_largest = -infinity]
+    C --> D[Iterate through each element in the array]
+    D --> E[Is element > first_largest?]
+    E -->|Yes| F[Update second_largest = first_largest]
+    F --> G[Update first_largest = element]
+    E -->|No| H[Is element > second_largest and element != first_largest?]
+    H -->|Yes| I[Update second_largest = element]
+    H -->|No| J[Skip to next element]
+    I --> J
+    G --> J
+    F --> J
+    J --> D
+    D --> K[Output second_largest]
+    K --> L[End]
+</div>
+</body>
+</html>

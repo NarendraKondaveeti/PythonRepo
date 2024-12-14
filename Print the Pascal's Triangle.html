@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascal's Triangle Flowchart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+
+<div class="mermaid">
+    flowchart TD
+        A[Start] --> B[Input number of rows]
+        B --> C[Initialize row = 0]
+        C --> D{Is row < total rows?}
+        D -->|No| E[End]
+        D -->|Yes| F[Initialize column = 0]
+        F --> G{Is column <= row?}
+        G -->|Yes| H[Calculate value using formula: row! / (column! * (row-column)!)]
+        H --> I[Display value]
+        I --> J[Increment column by 1]
+        J --> G
+        G -->|No| K[Increment row by 1]
+        K --> C
+</div>
+
+</body>
+</html>

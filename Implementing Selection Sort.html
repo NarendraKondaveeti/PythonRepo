@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sort Implementation</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mermaid@10.2.2/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+    flowchart TD
+        A[Start] --> B[Input Array]
+        B --> C[Initialize i = 0]
+        C --> D[Set min_idx = i]
+        D --> E[Initialize j = i + 1]
+        E --> F[Is j < n?]
+        F -->|Yes| G[Compare arr[j] with arr[min_idx]]
+        F -->|No| I[Swap arr[i] with arr[min_idx]]
+        G -->|Yes| H[If arr[j] < arr[min_idx], update min_idx]
+        G -->|No| J[Increment j]
+        H --> J
+        J --> F
+        I --> K[Increment i]
+        K --> L[Is i < n-1?]
+        L -->|Yes| C
+        L -->|No| M[End]
+</div>
+</body>
+</html>

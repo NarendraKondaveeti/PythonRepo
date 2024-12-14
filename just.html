@@ -1,26 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        .box {
-            border: 2px solid black;
-            padding: 10px;
-            margin: 10px;
-            text-align: center;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Check Flowchart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
 </head>
 <body>
-    <div class="box">Start</div>
-    <div class="box">n = 10</div>
-    <div class="box">series = [0, 1]</div>
-    <div class="box">for _ in range(2, n):</div>
-    <div class="box">
-        Calculate new_term = series[-1] + series[-2] <br>
-        Append new_term to series
-    </div>
-    <div class="box">Loop until all terms are generated</div>
-    <div class="box">Print series</div>
-    <div class="box">End</div>
+<div class="mermaid">
+    flowchart TD
+        A[Start] --> B[User inputs a number]
+        B --> C[Is the number less than 2?]
+        C -->|Yes| D[Not Prime, because prime numbers are greater than 1]
+        C -->|No| E[Start loop from 2 to square root of the number]
+        E --> F[Is the number divisible by any number in the loop?]
+        F -->|Yes| G[Not Prime, because it has divisors other than 1 and itself]
+        F -->|No| H[Continue to next number in the loop]
+        H --> E
+        G --> I[End the loop and display the result as Not Prime]
+        I --> J[End]
+        D --> J
+        E --> K[End loop, the number is Prime]
+        K --> I[Display the result as Prime]
+</div>
 </body>
 </html>

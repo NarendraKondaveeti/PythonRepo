@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find First Non-Repeated Character in a String</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input string s]
+    B --> C[Initialize frequency map]
+    C --> D[Iterate through each character in the string]
+    D --> E[Is character in frequency map?]
+    E -->|Yes| F[Increment count of character in map]
+    E -->|No| G[Add character to map with count 1]
+    F --> G
+    G --> D
+    D --> H[Check if end of string is reached]
+    H -->|Yes| I[Iterate through frequency map to find first character with count 1]
+    I --> J[Is character with count 1 found?]
+    J -->|Yes| K[Output character]
+    J -->|No| L[Output "No non-repeated character found"]
+    K --> M[End]
+    L --> M
+</div>
+</body>
+</html>

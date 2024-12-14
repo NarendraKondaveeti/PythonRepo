@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Sort Implementation</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.2.2/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input Array]
+    B --> C[Initialize n = length of array]
+    C --> D[Set i = 0]
+    D --> E[Set j = 0]
+    E --> F[Check if j < n - i - 1]
+    F -->|Yes| G[Compare arr[j] with arr[j+1]]
+    F -->|No| J[Increment i by 1]
+    G -->|Yes| H[If arr[j] > arr[j+1], swap arr[j] and arr[j+1]]
+    H --> I[Increment j by 1]
+    I --> E
+    J -->|Check if i < n - 1| K[If Yes, go back to step D]
+    J -->|No| L[End]
+</div>
+</body>
+</html>

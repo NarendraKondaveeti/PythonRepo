@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check for Anagram Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input two strings: str1, str2]
+    B --> C[Is length of str1 equal to length of str2?]
+    C -->|No| D[Output: Not an Anagram]
+    C -->|Yes| E[Convert both strings to lowercase]
+    E --> F[Sort the characters in both strings]
+    F --> G[Are both sorted strings equal?]
+    G -->|Yes| H[Output: Both are Anagrams]
+    G -->|No| I[Output: Not an Anagram]
+    H --> J[End]
+    I --> J
+</div>
+</body>
+</html>

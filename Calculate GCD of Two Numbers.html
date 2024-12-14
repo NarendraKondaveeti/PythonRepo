@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate GCD of Two Numbers Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input two numbers: num1, num2]
+    B --> C[Is num2 equal to 0?]
+    C -->|Yes| D[Output GCD: num1]
+    C -->|No| E[Calculate remainder: remainder = num1 mod num2]
+    E --> F[Update num1 = num2 and num2 = remainder]
+    F --> C
+    D --> G[End]
+</div>
+</body>
+</html>

@@ -1,5 +1,9 @@
 # ====Raw method(it means no ib-built function or methonds)=====
-# ====without fuction but with in-built method =================
+
+
+# ====with in-built method =================
+
+
 # ====with function and without in-built method/functions ======
 # ====with function and in-built methond and the input value should as at runtime ====
 """

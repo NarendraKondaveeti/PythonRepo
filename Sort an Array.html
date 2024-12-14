@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort Array Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input Array]
+    B --> C[Set i equal to 0]
+    C --> D[Check if i is less than length of array minus 1]
+    D -->|Yes| E[Set j equal to i plus 1]
+    D -->|No| P[End]
+    E --> F[Check if element at i is greater than element at j]
+    F -->|Yes| G[Swap elements at i and j]
+    F -->|No| H[Proceed to next element]
+    G --> I[Increment j by 1]
+    H --> I
+    I --> J[Check if j is less than length of array]
+    J -->|Yes| F
+    J -->|No| K[Increment i by 1]
+    K --> D
+</div>
+</body>
+</html>

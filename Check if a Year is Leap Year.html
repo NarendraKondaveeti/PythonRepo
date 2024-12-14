@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year Check</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.2.2/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input year]
+    B --> C[Is year divisible by 4?]
+    C -->|No| D[Not a leap year]
+    C -->|Yes| E[Is year divisible by 100?]
+    E -->|No| F[Leap year]
+    E -->|Yes| G[Is year divisible by 400?]
+    G -->|No| D[Not a leap year]
+    G -->|Yes| F[Leap year]
+    D --> H[End]
+    F --> H[End]
+</div>
+</body>
+</html>

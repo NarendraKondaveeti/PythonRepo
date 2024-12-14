@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Flowchart with Visible Annotations</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>mermaid.initialize({ startOnLoad: true });</script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    %% Start Stage
+    A[Start] --> B[Input n: Number to find Factorial]
+    %% Display message: "User enters the number"
+
+    %% Initialize Variables
+    B --> C[Initialize factorial = 1]
+    %% Display message: "Set initial value of factorial as 1"
+
+    C --> D[Initialize i = 1]
+    %% Display message: "Start loop with i = 1"
+
+    %% Loop Stage
+    D --> E[Is i <= n?]
+    %% Display message: "Check if i is <= n"
+
+    %% Multiply and Update Factorial
+    E -->|Yes| F[Update factorial = factorial * i]
+    %% Display message: "Multiply factorial by i"
+
+    F --> G[Increment i by 1]
+    %% Display message: "Increment i by 1"
+
+    G --> D
+    %% Loop back for next iteration
+
+    %% End Loop and Display Result
+    E -->|No| H[Output: factorial]
+    %% Display message: "Output the calculated factorial value"
+
+    H --> I[End]
+    %% Display message: "End of program"
+</div>
+</body>
+</html>

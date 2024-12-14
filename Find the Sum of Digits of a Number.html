@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of Digits Flowchart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input number n]
+    B --> C[Initialize sum = 0]
+    C --> D{Is n > 0?}
+    D -->|Yes| E[Extract last digit: digit = n % 10]
+    E --> F[Add digit to sum: sum = sum + digit]
+    F --> G[Remove last digit: n = n // 10]
+    G --> D
+    D -->|No| H[Output sum]
+    H --> I[End]
+</div>
+</body>
+</html>

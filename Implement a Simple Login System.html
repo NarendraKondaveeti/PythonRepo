@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Login System</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.2.2/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input Username]
+    B --> C[Input Password]
+    C --> D[Check if Username and Password match predefined values]
+    D -->|Yes| E[Display Login Success]
+    D -->|No| F[Display Login Failed]
+    E --> G[End]
+    F --> G
+</div>
+</body>
+</html>

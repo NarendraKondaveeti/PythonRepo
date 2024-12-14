@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of First N Natural Numbers</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.2.2/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input N]
+    B --> C[Initialize sum = 0]
+    C --> D[Is N > 0?]
+    D -->|No| E[Display sum]
+    D -->|Yes| F[Add N to sum: sum = sum + N]
+    F --> G[Decrement N by 1: N = N - 1]
+    G --> D
+    E --> H[End]
+</div>
+</body>
+</html>

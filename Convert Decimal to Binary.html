@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Decimal to Binary</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input decimal number]
+    B --> C[Initialize binary as an empty string]
+    C --> D[Check if decimal > 0]
+    D -->|Yes| E[Find remainder = decimal % 2]
+    E --> F[Update binary = remainder + binary]
+    F --> G[Update decimal = decimal // 2]
+    G --> D
+    D -->|No| H[Output binary]
+    H --> I[End]
+</div>
+</body>
+</html>

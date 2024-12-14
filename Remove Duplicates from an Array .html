@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove Duplicates from Array Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input Array]
+    B --> C[Initialize empty set to store unique elements]
+    C --> D[Set i equal to 0]
+    D --> E[Is i less than length of array?]
+    E -->|Yes| F[Is array element at index i already in set?]
+    E -->|No| G[Output the unique array]
+    F -->|Yes| I[Skip element and increment i]
+    F -->|No| H[Add array element at index i to the set]
+    H --> J[Increment i by 1]
+    J --> D
+    I --> D
+    G --> K[End]
+</div>
+</body>
+</html>

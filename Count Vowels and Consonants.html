@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Vowels and Consonants Flowchart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+    flowchart TD
+        A[Start] --> B[Define vowels as aeiou and AEIOU]
+        B --> C[Initialize vowel count to 0 and consonant count to 0]
+        C --> D[Check if input string is empty]
+        D -->|Yes| E[Stop because no processing is needed]
+        D -->|No| F[Iterate through each character in the input string using a for loop]
+        F --> G[Check if character is a letter using isalpha function]
+        G -->|No| H[Skip this character and move to the next one]
+        G -->|Yes| I[Check if character is in vowels using if char in vowels condition]
+        I -->|Yes| J[Increment vowel count by 1]
+        J --> K[Move to the next character]
+        I -->|No| L[Increment consonant count by 1]
+        L --> K
+        K --> F
+        F --> M[After processing all characters, display vowel count and consonant count]
+        M --> N[End]
+</div>
+</body>
+</html>

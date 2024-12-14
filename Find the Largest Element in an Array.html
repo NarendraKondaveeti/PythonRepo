@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Largest Element in Array Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input Array]
+    B --> C[Set largest equal to first element of the array]
+    C --> D[Set i equal to 1]
+    D --> E[Is i less than length of array?]
+    E -->|Yes| F[Check if element at index i is greater than largest]
+    E -->|No| H[Output largest]
+    F -->|Yes| G[Update largest to element at index i]
+    G --> I[Increment i by 1]
+    I --> D
+    H --> J[End]
+</div>
+</body>
+</html>

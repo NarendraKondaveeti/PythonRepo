@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Digits in Number Flowchart</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.11.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input number: num]
+    B --> C[Initialize digit_count = 0]
+    C --> D[Is num > 0?]
+    D -->|No| E[Output: digit_count]
+    D -->|Yes| F[Increment digit_count by 1]
+    F --> G[Divide num by 10]
+    G --> D
+    E --> H[End]
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input first number (num1)]
+    B --> C[Input second number (num2)]
+    C --> D[Input operation (+, -, *, /)]
+    D --> E[Is operation '+']
+    E -->|Yes| F[Result = num1 + num2]
+    E -->|No| G[Is operation '-']
+    G -->|Yes| H[Result = num1 - num2]
+    G -->|No| I[Is operation '*']
+    I -->|Yes| J[Result = num1 * num2]
+    I -->|No| K[Is operation '/']
+    K -->|Yes| L[Check if num2 == 0]
+    L -->|Yes| M[Print: Division by Zero Error]
+    L -->|No| N[Result = num1 / num2]
+    K -->|No| O[Print: Invalid Operation]
+    F --> P[Print Result]
+    H --> P
+    J --> P
+    N --> P
+    P --> Q[End]
+    M --> Q
+    O --> Q
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove All Whitespaces from a String</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input string s]
+    B --> C[Initialize empty string result]
+    C --> D[Iterate through each character in the string]
+    D --> E[Is character a whitespace?]
+    E -->|Yes| F[Skip this character]
+    E -->|No| G[Add character to result string]
+    F --> G
+    G --> D
+    D --> H[Check if end of string is reached]
+    H -->|Yes| I[Output result string]
+    I --> J[End]
+</div>
+</body>
+</html>

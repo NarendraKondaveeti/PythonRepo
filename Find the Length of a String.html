@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Length of String Flowchart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input string s]
+    B --> C[Initialize length = 0]
+    C --> D{Is s[i] != null?}
+    D -->|Yes| E[Increment length by 1]
+    E --> F[Move to next character (i = i + 1)]
+    F --> D
+    D -->|No| G[Output length]
+    G --> H[End]
+</div>
+</body>
+</html>

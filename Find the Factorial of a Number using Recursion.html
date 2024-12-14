@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Factorial of a Number using Recursion</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.2.2/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+</head>
+<body>
+<div class="mermaid">
+flowchart TD
+    A[Start] --> B[Input number n]
+    B --> C{Is n = 0 or 1?}
+    C -->|Yes| D[Return 1]
+    C -->|No| E[Return n * Factorial(n-1)]
+    E --> F[Recursively calculate Factorial(n-1)]
+    F --> C
+    D --> G[Output Factorial result]
+    E --> G
+    G --> H[End]
+</div>
+</body>
+</html>
