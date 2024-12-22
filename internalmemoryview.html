@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Memory Visualization</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .section {
+            border: 2px solid #333;
+            padding: 10px;
+            width: 45%;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+
+        .section h3 {
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: -10px -10px 10px -10px;
+            padding: 10px;
+            border-bottom: 2px solid #333;
+            font-size: 1.25rem;
+        }
+
+        .block {
+            border: 1px dashed #333;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .block h4 {
+            margin: 0;
+            color: #555;
+            font-size: 1.1rem;
+        }
+
+        .variable {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+            font-size: 1rem;
+        }
+
+        .arrow {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .arrow img {
+            max-width: 80%;
+            border-radius: 8px;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .note {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 20px;
+            border-top: 2px solid #ccc;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Advanced Python Memory Visualization</h1>
+    <div class="container">
+        <!-- Stack Memory Section -->
+        <div class="section">
+            <h3>Stack Memory</h3>
+            <div class="block">
+                <h4>Function Call: main()</h4>
+                <div class="variable">
+                    <span>car1:</span>
+                    <span>Ref: obj123</span>
+                    <!-- car1 is pointing to the object obj123 stored in Heap -->
+                </div>
+                <div class="variable">
+                    <span>car2:</span>
+                    <span>Ref: obj456</span>
+                    <!-- car2 is pointing to the object obj456 stored in Heap -->
+                </div>
+            </div>
+            <div class="block">
+                <h4>Function Call: __init__()</h4>
+                <div class="variable">
+                    <span>self:</span>
+                    <span>Ref: obj123</span>
+                    <!-- self refers to the object obj123 being created -->
+                </div>
+                <div class="variable">
+                    <span>color:</span>
+                    <span>"Red"</span>
+                    <!-- color is a local variable in __init__() function holding the value "Red" -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Heap Memory Section -->
+        <div class="section">
+            <h3>Heap Memory</h3>
+            <div class="block">
+                <h4>Object: obj123</h4>
+                <div class="variable">
+                    <span>color:</span>
+                    <span>"Red"</span>
+                    <!-- color attribute of object obj123 -->
+                </div>
+                <div class="variable">
+                    <span>model:</span>
+                    <span>"Sedan"</span>
+                    <!-- model attribute of object obj123 -->
+                </div>
+            </div>
+            <div class="block">
+                <h4>Object: obj456</h4>
+                <div class="variable">
+                    <span>color:</span>
+                    <span>"Blue"</span>
+                    <!-- color attribute of object obj456 -->
+                </div>
+                <div class="variable">
+                    <span>model:</span>
+                    <span>"SUV"</span>
+                    <!-- model attribute of object obj456 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Image to Explain the Visual -->
+    <div class="arrow">
+        <h3>Memory Storage Diagram</h3>
+        <img src="memory-diagram.png" alt="Memory Storage Diagram">
+        <p class="note">Note: Stack memory holds references to objects, whereas objects themselves are stored in the heap memory.</p>
+    </div>
+
+    <!-- Explanation of Memory Allocation -->
+    <div class="note">
+        <p><strong>Breakdown of the Visual and Explanation:</strong></p>
+        <p><strong>Stack Memory:</strong></p>
+        <ul>
+            <li>Stack Memory stores local variables (like references or function parameters).</li>
+            <li>In the main() function, car1 and car2 hold references to objects stored in Heap Memory.</li>
+            <li>Inside the __init__() function, the self variable refers to the object being created, and color is a local variable with a value like "Red".</li>
+        </ul>
+        <p><strong>Heap Memory:</strong></p>
+        <ul>
+            <li>Heap Memory stores the actual objects.</li>
+            <li>In this example, obj123 and obj456 are stored in Heap Memory. These objects contain attributes like color and model (e.g., "Red", "Sedan").</li>
+        </ul>
+        <p><strong>Image Explanation:</strong></p>
+        <ul>
+            <li>The image (memory-diagram.png) shows the stack holding references to objects, while the heap stores the actual data.</li>
+            <li>The Stack contains references to objects like obj123 and obj456.</li>
+            <li>The Heap stores the actual objects with their respective attributes (color, model).</li>
+        </ul>
+        <p><strong>Final Notes:</strong></p>
+        <ul>
+            <li>When you create an object, Stack Memory stores references to the object, while Heap Memory stores the actual object and its data.</li>
+            <li>Understanding the difference between Stack and Heap Memory is crucial for efficient memory management and debugging.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
