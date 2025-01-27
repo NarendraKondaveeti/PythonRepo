@@ -1,3 +1,7 @@
+
+"""If a number (n) is divided by all smaller numbers (from 1 to n-1), and the numbers that give a remainder of 0 are added together, 
+and their sum equals the original number (n), then it is called a perfect number"""
+
 # ====Raw method(it means no ib-built function or methonds)=====
 # Function to check if a number is a perfect number
 def is_perfect_number(n):
