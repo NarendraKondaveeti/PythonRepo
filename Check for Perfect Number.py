@@ -1,6 +1,24 @@
 
 """If a number (n) is divided by all smaller numbers (from 1 to n-1), and the numbers that give a remainder of 0 are added together, 
-and their sum equals the original number (n), then it is called a perfect number"""
+and their sum equals the original number (n), then it is called a perfect number
+
+Example Input and Output:-
+Input: 6
+Divisors: 1, 2, 3
+Sum: 1 + 2 + 3 = 6
+Output: 6 is a Perfect Number
+
+Input: 10
+Divisors: 1, 2, 5
+Sum: 1 + 2 + 5 = 8
+Output: 10 is not a Perfect Number
+
+Input: 28
+Divisors: 1, 2, 4, 7, 14
+Sum: 1 + 2 + 4 + 7 + 14 = 28
+Output: 28 is a Perfect Number
+
+"""
 
 # ====Raw method(it means no ib-built function or methonds)=====
 # Function to check if a number is a perfect number
