@@ -1,3 +1,14 @@
+Anagrams are words made by rearranging the letters of another word.
+
+Example:
+"listen" and "silent"
+
+These are anagrams because they have the same letters, just in a different order.
+"earth" and "heart"
+
+These are anagrams because they use the same letters, arranged differently.
+In simple terms: An anagram is when you rearrange the letters of one word to make another word.
+
 # ====Raw method(it means no ib-built function or methonds)=====
 # Function to check if two strings are anagrams
 def check_anagram(str1, str2):
