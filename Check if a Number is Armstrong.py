@@ -1,3 +1,20 @@
+"""
+An Armstrong number is a number where, if you take each digit of the number, raise it to the power of the total number of digits,
+and then add them together, the sum will be equal to the original number.
+
+Example:
+153:
+Number of digits = 3
+Split digits: 1, 5, 3
+Calculate:
+1**3 + 5**3 + 3**3 = 1+125+27 = 153
+Since the sum equals the original number, 153 is an Armstrong number.
+
+Simple Formula:
+For a number, if you add each of its digits raised to the power of the total number of digits, and the result is equal to the number itself, 
+it's an Armstrong number
+"""
+
 # Raw Python Program (without in-built methods):
 # Function to check if a number is Armstrong
 def is_armstrong(number):
