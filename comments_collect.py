@@ -1,7 +1,7 @@
 import requests
 from textblob import TextBlob
 
-API_KEY = "AIzaSyBBk-qsBoJ_LcHqeemf1XWHWVtnnahvcQA"  # 🔹 Replace with your API Key
+API_KEY = "API Key"  # 🔹 Replace with your API Key
 VIDEO_ID = "hp5yimKgnMQ"  # 🔹 Replace with correct Video ID
 
 url = f"https://www.googleapis.com/youtube/v3/commentThreads?part=snippet&videoId={VIDEO_ID}&key={API_KEY}&maxResults=5000"
