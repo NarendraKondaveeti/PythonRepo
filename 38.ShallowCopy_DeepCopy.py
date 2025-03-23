@@ -15,7 +15,6 @@ we can create shallow copy in three ways
 the above three ways are same
 """
 
-
 List1 = [1, 2, 3, "Test", "API"]
 List2 = List1.copy()
 print(id(List2)) != print(id(List1)) # List1 and List2 have different memory addresses, they are not the same

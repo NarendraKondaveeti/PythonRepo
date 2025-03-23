@@ -17,7 +17,9 @@ print(dict(enumerate(List)))    # {0: 10, 1: 20, 2: 30, 3: 40}
 for idx, i in enumerate(List):
     print(idx, i)
 
-""" Output:-
+""" Output:- The output will be returned in an unpacked format. 
+This means enumerate() returns a packed tuple, 
+and the for loop unpacks it while printing the output
 0 10
 1 20
 2 30
