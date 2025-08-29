@@ -13,6 +13,16 @@ print(f"The factorial of {n} is {factorial}")
 # === 2. Without Function but Using In-Built Method
 
 import math  # Import math module
-n = int(input("Enter n value"))
+n = int(input("Enter n value: "))
 print(f"Factorial value for {n}", math.factorial(n))
- 
+
+#===============with Function===========
+def find_factorial(n):
+    factorial = 1
+    for i in range(1, n + 1):  # Loop from 1 to n
+        factorial *= i
+
+    return factorial
+n = int(input("Enter n value: "))
+num = find_factorial(n)
+print(f"The factorial of {n} is {num}")

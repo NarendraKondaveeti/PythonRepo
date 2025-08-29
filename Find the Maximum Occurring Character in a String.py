@@ -32,9 +32,12 @@ from collections import Counter
 # Function to find the maximum occurring character using Counter
 def max_occuring_char(s):
     # Using Counter to get the frequency of each character
-    count = Counter(s)
+    count1 = Counter(s)
+
+    print(count1)
     # Finding the character with the maximum count
-    return max(count, key=count.get)
+    max_value = max(count1, key=count1.get) #count.get(key)
+    return max_value
 
 # Input string
 s = input("Enter a string: ")

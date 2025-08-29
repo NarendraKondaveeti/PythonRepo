@@ -50,3 +50,18 @@ if is_armstrong(number):
     print(f"{number} is an Armstrong number.")
 else:
     print(f"{number} is not an Armstrong number.")
+
+#
+num = 9474
+digits = str(num)
+power = len(digits)
+total = 0
+
+for d in digits:
+    total += int(d) ** power
+
+if total == num:
+    print("Armstrong number")
+else:
+    print("Not an Armstrong number")
+

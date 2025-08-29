@@ -1,8 +1,8 @@
 # ====Raw method(it means no ib-built function or methonds)=====
 # Function to find the GCD of two numbers using Euclidean algorithm
-GCD (Greatest Common Divisor) ante rendu numbers ki common ga unna biggest factor (divisor).
-Idi HCF (Highest Common Factor) ani kuda antaru.
-
+#GCD (Greatest Common Divisor) ante rendu numbers ki common ga unna biggest factor (divisor).
+# Idi HCF (Highest Common Factor) ani kuda antaru.
+"""
 📌 Mathematical Definition
 👉 GCD(m, n) = Two numbers ki common ga vache biggest number.
 🔹 GCD(12, 18) Calculation
@@ -15,7 +15,7 @@ a % b ni recursive ga calculate chesthu b = 0 ayye varaku loop run avuthundi.
 Final ga a value GCD avutundi.
 
 👉 So, GCD(12, 18) = 6
-
+"""
 def gcd(a, b):
     while b != 0:
         a, b = b, a % b  # Swap a and b, and replace b with the remainder of a divided by b

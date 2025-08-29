@@ -36,3 +36,27 @@ if result:
     print(f"The first non-repeated character is: {result}")
 else:
     print("No non-repeated character found.")
+
+###############################
+def first_non_repeated_char_basic(s):
+    for i in range(len(s)):
+        repeated = False
+        for j in range(len(s)):
+            if i != j and s[i] == s[j]:
+                repeated = True
+                break
+        if not repeated:
+            return s[i]
+    return None
+
+# Input
+string = input("Enter a string: ")
+
+# Function call
+result = first_non_repeated_char_basic(string)
+
+if result:
+    print(f"The first non-repeated character is: {result}")
+else:
+    print("No non-repeated character found.")
+

@@ -60,3 +60,11 @@ if is_perfect_number(number):
     print(f"{number} is a Perfect Number")
 else:
     print(f"{number} is not a Perfect Number")
+
+#===
+def is_perfect(n):
+    sum = 0
+    for i in range(1, n//2 + 1): # Optimization: no need to go till n-1
+        if n % i == 0:
+            sum += i
+    return sum == n

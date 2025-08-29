@@ -1,3 +1,4 @@
+"""
 Anagrams are words made by rearranging the letters of another word.
 
 Example:
@@ -8,7 +9,7 @@ These are anagrams because they have the same letters, just in a different order
 
 These are anagrams because they use the same letters, arranged differently.
 In simple terms: An anagram is when you rearrange the letters of one word to make another word.
-
+"""
 # ====Raw method(it means no ib-built function or methonds)=====
 # Function to check if two strings are anagrams
 def check_anagram(str1, str2):
@@ -17,7 +18,7 @@ def check_anagram(str1, str2):
     str2 = str2.replace(" ", "").lower()
 
     # If lengths are not equal, they cannot be anagrams
-    if len(str1) != len(str2):
+    if len(str1) != len(str2): # 5 != 6
         return False
     
     # Sort both strings and compare
