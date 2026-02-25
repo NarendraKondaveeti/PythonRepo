@@ -18,10 +18,10 @@ print(f"The sum of digits of {number} is: {result}")
 
 # Function to find the sum of digits of a number using str()
 def sum_of_digits(n):
-    return sum(int(digit) for digit in str(n))  # Convert number to string and sum each digit
+    return sum(int(digit) for digit in n)  # Convert number to string and sum each digit
 
 # Input number
-number = int(input("Enter a number: "))
+number = input("Enter a number: ")
 
 result = sum_of_digits(number)
 print(f"The sum of digits of {number} is: {result}")

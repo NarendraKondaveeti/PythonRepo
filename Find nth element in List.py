@@ -1,6 +1,4 @@
 def nth_largest(list, n):
-    #max_val = None
-    #max_index = -1
     if n <= 0 or n > len(list):
         return None
     used = [False] * len(list)
