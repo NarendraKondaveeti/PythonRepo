@@ -20,7 +20,7 @@ def check_anagram(str1, str2):
     # If lengths are not equal, they cannot be anagrams
     if len(str1) != len(str2): # 5 != 6
         return False
-    
+
     # Sort both strings and compare
     sorted_str1 = sorted(str1)
     sorted_str2 = sorted(str2)
@@ -56,3 +56,4 @@ if check_anagram(str1, str2):
     print(f"'{str1}' and '{str2}' are anagrams.")
 else:
     print(f"'{str1}' and '{str2}' are not anagrams.")
+
