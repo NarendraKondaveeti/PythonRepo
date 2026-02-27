@@ -1,0 +1,11 @@
+What is Inheritance?
+•	Inheritance allows a class (child/derived class) to reuse properties and methods of another class (parent/base class).
+•	It helps in code "reusability" and "method extension".
+
+Types of Inheritance in Python:
+1.	Single Inheritance -> One child class inherits from one parent class.
+2.	Multilevel Inheritance -> A class inherits from another derived class.
+3.	Hierarchical Inheritance -> Multiple child classes inherit from the same parent.
+4.	Multiple Inheritance A child class inherits from more than one parent class.
+
+
