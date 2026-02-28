@@ -1,0 +1,76 @@
+Polymorphism -> Same name, different behaviors,
+    o Variable overriding.
+    o Method overriding (child redefines parent method),
+    o Method overloading (using default arguments).
+
+    Polymorphism means one thing can behave in many different ways.
+    It is like one person playing different roles in different situations.
+    For example, the same person can be a father at home, an employee at office, and a friend outside.
+    Even though the person is the same, the behavior changes based on the situation.
+    In programming, this means one function or action can work differently depending on the input or context.
+
+         📘 Polymorphism — Key Fundamentals 🤔
+
+        🔹 One interface (name) → Multiple behaviors
+        🔹 Same method/function works differently based on context
+        🔹 Achieved mainly through Overriding and Overloading
+        🔹 Improves flexibility and extensibility of code
+        🔹 Supports dynamic behavior at runtime
+
+        💎 One-line:
+
+        🎭 One action → Many forms
+        ✅ Advantages of Polymorphism 😄
+
+        ✔️ Code reusability
+        ✔️ Flexible design (easy to extend)
+        ✔️ Cleaner and more readable code
+        ✔️ Reduces conditional logic (if-else chains)
+        ✔️ Supports plug-and-play behavior
+
+        👉 Same interface, different implementations 👍
+
+        ⚠️ Limitations of Polymorphism 🤔
+
+        🔴 1) Harder to understand for beginners
+        👉 Behavior depends on object type
+
+        🔴 2) Debugging can be difficult
+        👉 Method execution not obvious
+
+        🔴 3) Runtime overhead
+        👉 Dynamic method resolution
+
+        🔴 4) Overuse leads to complex design
+        👉 Too many variations = confusion 😵
+
+        🔴 5) Python overloading support limited
+        👉 Not like Java/C++
+
+        🛠️ Solutions / Best Practices 😎
+
+        ✔️ Use clear naming conventions
+        ✔️ Apply only where flexibility is needed
+        ✔️ Keep hierarchy simple
+        ✔️ Use documentation & type hints
+        ✔️ Prefer composition if behavior becomes too complex
+
+        🏆 Real-Life Analogy 💡
+
+        📱 Mobile phone:
+
+        ✔️ Same “Call” button
+        ✔️ Calls different people based on number
+
+        Same action → different result
+
+📘 Overriding vs Overloading — Comparison 🤔
+🔑 Feature	            🔄 Method Overriding	            ➕ Method Overloading
+Meaning	Child class     changes parent method behavior	    Same method name with different inputs
+Where it happens	    Between Parent & Child classes	    Usually within the same class
+Purpose	                Modify inherited behavior	        Provide multiple ways to perform same action
+Parameters	            Must be SAME	                    Must be DIFFERENT
+Inheritance needed	    ✅ Yes	                            ❌ Not required
+Runtime / Compile	    Runtime polymorphism	            Compile-time concept (Python simulates)
+Python support	        ✅ Fully supported	                ⚠️ Limited support
+Example idea	        Parent method replaced in child	    Same method handles different arguments

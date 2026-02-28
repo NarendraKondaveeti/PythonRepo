@@ -6,6 +6,100 @@ Types of Inheritance in Python:
 1.	Single Inheritance -> One child class inherits from one parent class.
 2.	Multilevel Inheritance -> A class inherits from another derived class.
 3.	Hierarchical Inheritance -> Multiple child classes inherit from the same parent.
-4.	Multiple Inheritance A child class inherits from more than one parent class.
+4.	Multiple Inheritance -> A child class inherits from more than one parent class.
 
+
+Multilevel Inheritance:-
+        💡 Key Rule (Very Important)
+        ⭐ Create object of LAST child to access ALL features
+        👉 Parent object → only parent features
+        👉 Child object → parent + child
+        👉 GrandChild object → parent + child + grandchild
+
+Multiple Inheritance:-
+        🏠 Real-Life Analogy
+        👨 Father + 👩 Mother → 👶 Child
+        Child inherits traits from BOTH parents ❤️
+
+    Method search order important
+        Python uses:
+        ⭐ MRO — Method Resolution Order
+        👉 Left → Right order
+        If same method exists in both parents:
+        👉 ParentA first (because written first)
+
+    ⚠️ LIMITATIONS / CORE ISSUES
+    🔴 1) Method Name Conflict
+            If both parents have same method:
+                class ParentA:
+                    def show(self): ...
+                class ParentB:
+                    def show(self): ...
+
+                class Child(ParentA, ParentB):
+    🤔 Which show() will run?
+        👉 Python will call:
+        ⭐ ParentA.show()
+        Because Python follows left → right order (MRO — Method Resolution Order)
+
+    🏆 When to Use Multiple Inheritance?
+        ✔️ Combine features from different sources
+        ✔️ Mix behaviors
+        ✔️ Framework-level design
+        ✔️ Advanced OOP systems
+
+Hierarchical Inheritance:-
+    📘 Hierarchical Inheritance — Quick Interview Revision
+
+    Hierarchical Inheritance is an OOP concept where multiple child classes inherit from a single parent class.
+
+    👉 Structure:
+        One Parent → Many Children
+
+        👉 Syntax Example:
+        class Parent:
+        ...
+
+        class Child1(Parent):
+        ...
+
+        class Child2(Parent):
+        ...
+
+    Key Points:
+        • One base class is shared by multiple derived classes
+        • All child classes inherit common features from the parent
+        • Each child can also have its own unique features
+        • Child classes are independent of each other
+        • Parent cannot access child features
+
+    Method Access:
+        Each child object can access:
+        ✔️ Parent methods and variables
+        ✔️ Its own methods and variables
+        ❌ Other child class features
+
+    Advantages:
+        ✔️ Eliminates duplicate code across similar classes
+        ✔️ Ensures consistency via a common parent
+        ✔️ Easy to extend new child classes
+        ✔️ Promotes modular design
+
+    Limitations:
+        ⚠️ Changes in parent affect all child classes
+        ⚠️ Tight coupling between parent and children
+        ⚠️ Cannot share child-specific behavior between siblings
+        ⚠️ Poor design may lead to an oversized parent class
+
+    Solutions / Best Practices:
+        • Keep parent class generic and stable
+        • Avoid putting child-specific logic in parent
+        • Use composition when sharing behavior between children
+        • Apply Single Responsibility Principle
+
+    Real-life analogy:
+    A single parent having multiple children — all inherit common traits but each child is unique.
+
+    In short:
+    Hierarchical Inheritance enables multiple classes to reuse common functionality from a single base class while remaining independent.
 

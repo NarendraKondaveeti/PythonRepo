@@ -11,7 +11,7 @@ class Child(Parent):
 Child = Child()
 Child.childmedthod()
 Child.parentmedthod()
-print(end="\n")
+print("")
 #Example2:-
 
 class Parent2:
