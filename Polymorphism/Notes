@@ -9,19 +9,16 @@ Polymorphism -> Same name, different behaviors,
     Even though the person is the same, the behavior changes based on the situation.
     In programming, this means one function or action can work differently depending on the input or context.
 
-         📘 Polymorphism — Key Fundamentals 🤔
-
+    📘 Polymorphism — Key Fundamentals 🤔
         🔹 One interface (name) → Multiple behaviors
         🔹 Same method/function works differently based on context
         🔹 Achieved mainly through Overriding and Overloading
         🔹 Improves flexibility and extensibility of code
         🔹 Supports dynamic behavior at runtime
 
-        💎 One-line:
-
+    💎 One-line:
         🎭 One action → Many forms
         ✅ Advantages of Polymorphism 😄
-
         ✔️ Code reusability
         ✔️ Flexible design (easy to extend)
         ✔️ Cleaner and more readable code
@@ -30,7 +27,7 @@ Polymorphism -> Same name, different behaviors,
 
         👉 Same interface, different implementations 👍
 
-        ⚠️ Limitations of Polymorphism 🤔
+    ⚠️ Limitations of Polymorphism 🤔
 
         🔴 1) Harder to understand for beginners
         👉 Behavior depends on object type
@@ -47,30 +44,43 @@ Polymorphism -> Same name, different behaviors,
         🔴 5) Python overloading support limited
         👉 Not like Java/C++
 
-        🛠️ Solutions / Best Practices 😎
-
+    🛠️ Solutions / Best Practices 😎
         ✔️ Use clear naming conventions
         ✔️ Apply only where flexibility is needed
         ✔️ Keep hierarchy simple
         ✔️ Use documentation & type hints
         ✔️ Prefer composition if behavior becomes too complex
 
-        🏆 Real-Life Analogy 💡
+    🏆 Real-Life Analogy 💡
 
         📱 Mobile phone:
-
         ✔️ Same “Call” button
         ✔️ Calls different people based on number
 
         Same action → different result
 
-📘 Overriding vs Overloading — Comparison 🤔
-🔑 Feature	            🔄 Method Overriding	            ➕ Method Overloading
-Meaning	Child class     changes parent method behavior	    Same method name with different inputs
-Where it happens	    Between Parent & Child classes	    Usually within the same class
-Purpose	                Modify inherited behavior	        Provide multiple ways to perform same action
-Parameters	            Must be SAME	                    Must be DIFFERENT
-Inheritance needed	    ✅ Yes	                            ❌ Not required
-Runtime / Compile	    Runtime polymorphism	            Compile-time concept (Python simulates)
-Python support	        ✅ Fully supported	                ⚠️ Limited support
-Example idea	        Parent method replaced in child	    Same method handles different arguments
+📘 Overriding vs Overloading — Comparison 🤔:-
+        🔑 Feature	            🔄 Method Overriding	            ➕ Method Overloading
+        Meaning	Child class     changes parent method behavior	    Same method name with different inputs
+        Where it happens	    Between Parent & Child classes	    Usually within the same class
+        Purpose	                Modify inherited behavior	        Provide multiple ways to perform same action
+        Parameters	            Must be SAME	                    Must be DIFFERENT
+        Inheritance needed	    ✅ Yes	                            ❌ Not required
+        Runtime / Compile	    Runtime polymorphism	            Compile-time concept (Python simulates)
+        Python support	        ✅ Fully supported	                ⚠️ Limited support
+        Example idea	        Parent method replaced in child	    Same method handles different arguments
+
+        🧠 Two Independent Concepts
+        1️⃣ MRO decides WHO is next
+        2️⃣ super() decides WHETHER to go next
+        ⭐ super() searches forward in MRO until method found 🤔
+        🌟 super().method() = call that method in next suitable class
+        “super() only tells go or not and what method to execute”
+
+        ✔️ super() alone → proxy only
+        ✔️ super().method() → executes method
+        ✔️ Uses next class in MRO
+        ✔️ Skips classes without that method
+        ✔️ Stops at first match
+
+Overloading:-
