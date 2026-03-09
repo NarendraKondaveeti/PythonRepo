@@ -19,3 +19,6 @@ numbers = [15, 3, 9, 27, 6, 18]
 nth = 4
 result = nth_smallest(numbers, nth)
 print(f"The {nth}rd smallest number is:", result)
+
+
+#==================

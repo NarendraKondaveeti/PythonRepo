@@ -1,4 +1,4 @@
-"""def nth_longest_string(words, n):
+def nth_longest_string(words, n):
     if n <= 0 or n > len(words):
         return None
     used = [False] * len(words)
@@ -19,7 +19,7 @@
 strings = ["banana", "orange", "cherry", "apple", "kiwi"]
 nth = 3
 result = nth_longest_string(strings, nth)
-print(f"The {nth}rd longest string is:", result)"""
+print(f"The {nth}rd longest string is:", result)
 
 
 #=======Another Way==================

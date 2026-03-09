@@ -1,3 +1,11 @@
+What is Polymorphism?
+    •	Polymorphism means "many forms".
+    •	In Python, it allows the same method name to behave differently based on context.
+Types of Polymorphism:
+    1.	Method Overriding -> Child class provides its own version of a method from the parent.
+    2.	Method Overloading -> Same method name but with different numbers of parameters
+    (Python does not support true overloading but can simulate it using default arguments).
+
 Polymorphism -> Same name, different behaviors,
     o Variable overriding.
     o Method overriding (child redefines parent method),
@@ -30,19 +38,15 @@ Polymorphism -> Same name, different behaviors,
     ⚠️ Limitations of Polymorphism 🤔
 
         🔴 1) Harder to understand for beginners
-        👉 Behavior depends on object type
-
+            👉 Behavior depends on object type
         🔴 2) Debugging can be difficult
-        👉 Method execution not obvious
-
+            👉 Method execution not obvious
         🔴 3) Runtime overhead
-        👉 Dynamic method resolution
-
+            👉 Dynamic method resolution
         🔴 4) Overuse leads to complex design
-        👉 Too many variations = confusion 😵
-
+            👉 Too many variations = confusion 😵
         🔴 5) Python overloading support limited
-        👉 Not like Java/C++
+            👉 Not like Java/C++
 
     🛠️ Solutions / Best Practices 😎
         ✔️ Use clear naming conventions
@@ -52,7 +56,6 @@ Polymorphism -> Same name, different behaviors,
         ✔️ Prefer composition if behavior becomes too complex
 
     🏆 Real-Life Analogy 💡
-
         📱 Mobile phone:
         ✔️ Same “Call” button
         ✔️ Calls different people based on number
@@ -71,11 +74,11 @@ Polymorphism -> Same name, different behaviors,
         Example idea	        Parent method replaced in child	    Same method handles different arguments
 
         🧠 Two Independent Concepts
-        1️⃣ MRO decides WHO is next
-        2️⃣ super() decides WHETHER to go next
-        ⭐ super() searches forward in MRO until method found 🤔
-        🌟 super().method() = call that method in next suitable class
-        “super() only tells go or not and what method to execute”
+            1️⃣ MRO decides WHO is next
+            2️⃣ super() decides WHETHER to go next
+            ⭐ super() searches forward in MRO until method found 🤔
+            🌟 super().method() = call that method in next suitable class
+            “super() only tells go or not and what method to execute”
 
         ✔️ super() alone → proxy only
         ✔️ super().method() → executes method
@@ -84,3 +87,14 @@ Polymorphism -> Same name, different behaviors,
         ✔️ Stops at first match
 
 Overloading:-
+        Sometimes we want same action name, but with different inputs.
+
+        👉 Example: “add” for 2 numbers, 3 numbers, or many numbers
+        Instead of many function names → use ONE name
+
+        ⭐ 3–5 Core Fundamental Rules
+        Same method name, different parameters
+        Behavior changes based on input
+        In Python, true overloading is NOT built-in
+        Python simulates it using default or variable arguments
+        No inheritance required
