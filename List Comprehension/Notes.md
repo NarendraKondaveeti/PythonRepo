@@ -67,7 +67,13 @@ With if...else
 if after iterable → Filtering (items ni skip cheyyachu)
 if...else before for → Every item ki output create chestundi (e item ni skip cheyyadu)
 
-Loop, mariyu if Condition untayi. First, for loop iterable ni iterate chesi current value ni loop variable ki assign chestundi. Tarvata if condition aa current value ni check chestundi. Condition True ayithe matrame aa value expression ki velthundi. Appudu expression execute ayi result ni new list lo add chestundi. Condition False ayithe expression execute avvadu, aa value skip aipothundi. Kabatti condition satisfy ayina values matrame final list lo untayi.
+1. Normal List Comprehension
+
+Normal List Comprehension lo Expression mariyu For Loop untayi. First, for loop iterable ni iterate chestundi mariyu prati iteration lo oka value ni loop variable ki assign chestundi. Tarvata expression aa current value ni use chesi result create chestundi. Aa result automatic ga new list lo add avuthundi. Ee process iterable lo unna anni values complete ayye varaku continue avuthundi.
+
+2. List Comprehension with if Condition
+
+Ee type List Comprehension lo Expression, For Loop, mariyu if Condition untayi. First, for loop iterable ni iterate chesi current value ni loop variable ki assign chestundi. Tarvata if condition aa current value ni check chestundi. Condition True ayithe matrame aa value expression ki velthundi. Appudu expression execute ayi result ni new list lo add chestundi. Condition False ayithe expression execute avvadu, aa value skip aipothundi. Kabatti condition satisfy ayina values matrame final list lo untayi.
 
 3. List Comprehension with if...else
 
