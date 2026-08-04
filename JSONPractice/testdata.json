@@ -1,0 +1,27 @@
+{
+  "login": {
+    "username": "admin",
+    "password": "Admin@123",
+    "DataType": "Without Nested Data"
+  },
+
+  "user_create": {
+    "firstname": "Vikram",
+    "lastname": "Kumar",
+    "email": "vikram@test.com",
+    "mobile": "9876543210",
+
+    "address": {
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "country": "India",
+      "pincode": "500001",
+      "DataType": "With Nested Data (address) + List (roles)"
+    },
+
+    "roles": [
+      "Admin",
+      "Tester"
+    ]
+  }
+}

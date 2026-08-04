@@ -1,0 +1,9 @@
+{
+    "user_create": {
+        "firstname": "Vikram",
+        "lastname": "Kumar",
+        "email": "vikram@test.com",
+        "mobile": "9876543210",
+        "id": 101
+    }
+}
