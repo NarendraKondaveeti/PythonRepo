@@ -86,3 +86,13 @@ for tarvata if vaste, adi Filtering kosam use chestaru. Ante condition satisfy a
 for mundu if...else vaste, adi Conditional Output kosam use chestaru. Ante prati iteration ki condition check chesi oka output create chestundi. Kabatti ikkada e iteration kuda skip avvadu, prati input ki oka output compulsory generate avuthundi.
 
 💡 Presentation Tip: "Loop value ni expression ki pass chestundi" ani cheppadam kanna, "Loop current value ni loop variable ki assign chestundi. Aa loop variable ni expression use chestundi." ani cheppadam technically correct mariyu interview lo professional explanation ga untundi.
+
+![alt text](image.png)
+
+[num for num in numbers]              # Same value
+[num * 2 for num in numbers]          # Multiply
+[num + 10 for num in numbers]         # Addition
+[num ** 2 for num in numbers]         # Square
+[len(name) for name in names]         # Length
+[name.upper() for name in names]      # Uppercase
+[user["id"] for user in users]        # Dictionary value
