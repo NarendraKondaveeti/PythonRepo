@@ -1,3 +1,4 @@
+#python enumerate() function practice
 names = ["Vikram", "Ravi", "Sai"]
 
 for name in enumerate(names):
